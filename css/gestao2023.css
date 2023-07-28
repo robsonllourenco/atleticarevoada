@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Estilos do cabeçalho */
+.header {
+  height: calc(100vh - 5rem);
+  position: relative;
+  top: 5rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--color-bg1);
+  margin-bottom: 6rem;
+
+}
+
+.description-header-container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 100%;
+}
+
+.description-header-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.description-header-left h3 {
+  font-size: 50px;
+}
+
+.description-header-left h4 {
+  margin-bottom: 0.6rem;
+}
+
+.description-header-left p {
+  margin: 1.2rem 0 2rem;
+
+}
+
+.description-header-right {
+  position: relative;
+  height: 100%;
+}
+
+
+.header-right-bg {
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  background: var(--color-warning);
+  position: absolute;
+  right: -20rem;
+  bottom: -22rem;
+}
+
+
+.header-image {
+  width: 220%;
+  position: absolute;
+  bottom: -10rem;
+  right: -20rem;
+  z-index: 1;
+}
+
+/* GESTÃO 2023 */
+
+.teamimg {
+  width: 200px;
+}
+
+.team2 {
+  background: #fff;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  /* exibe os elementos como uma fila */
+  flex-wrap: wrap;
+  /* permite que os elementos sejam divididos em várias linhas */
+  justify-content: center;
+  /* centraliza a fila horizontalmente */
+  align-items: center;
+  /* centraliza a fila verticalmente */
+  color: #000;
+}
+
+.team2 h2 {
+  margin-top: -10rem;
+  text-align: center;
+}
+
+.team2-container {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  /* alterado de 2fr para 1fr */
+  gap: 3rem;
+  justify-content: center;
+  max-width: 1200px;
+  /* ajuste a largura máxima do container conforme desejado */
+  width: 90%;
+  /* ajuste a largura do container conforme desejado */
+  margin-left: auto;
+  /* centraliza horizontalmente */
+  margin-right: auto;
+  /* centraliza horizontalmente */
+}
+
+
+.teamm2 {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* centraliza o texto horizontalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+.teamm2-small {
+  max-width: none;
+}
+
+.teamm2 h4 {
+  font-size: 1rem;
+  line-height: 2.2;
+}
+
+
+
+.equipeimg {
+  border-radius: 10px;
+  filter: none;
+}
+
+.nome {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #170d4b;
+}
+
+
+.descrição {
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  display: block;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 767px) {
+
+  /* estilos para dispositivos móveis */
+  .team2-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 300px;
+  }
+
+  .nome {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #170d4b;
+    /* Ajuste o espaçamento abaixo conforme desejado */
+    margin-bottom: 10px;
+  }
+
+  .descrição {
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    margin-top: 0;
+    padding-top: 10px;
+    /* Ajuste o espaçamento abaixo conforme desejado */
+    margin-bottom: 10px;
+  }
+
+  .teamm2 {
+    width: 100%;
+    margin: 0 0 40px 0;
+    /* adiciona margem inferior para separar cada teamm na coluna */
+  }
+
+  .teamimg {
+    width: 220px;
+  }
+}
